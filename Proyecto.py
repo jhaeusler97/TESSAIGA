@@ -13,7 +13,6 @@ app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 
 @app.route("/")
 def login():
-	titulo = "Home!"
 	return render_template("login.html")
 
 if __name__ == "__main__":

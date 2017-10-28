@@ -48,13 +48,13 @@
 		width: 8rem;
 		align-items: center;
 	}
-
+	
 	.login_form {
 		display: flex;
 		flex-direction: column;
 		padding: 1.5rem 2rem 0;
 	}
-
+	
 	input[type=text], [type=password] {
 		height: .5rem;
 		padding: 1rem;
@@ -75,8 +75,23 @@
 		margin: .5rem auto;
 	}
 
+	.btn__registrarse {
+		height: 2.5rem;
+		border: none;
+		background-color: #31B1E5;
+		color: white;
+		padding: .5px;
+		margin: .5rem auto;
+	}
+
 	.btn__submit:hover {
 		background-color: #39A1E5;
+	}
+
+	.texto__registrarse {
+		color: #6E6E6E;
+		padding: .5px;
+		font-size: .8em;
 	}
 	</style>
 </head>
@@ -86,10 +101,22 @@
     		<img class="login__img" src="./static/imgs/estampa.png" alt="">
     		<h2 class="login__title"> <span>INGRESAR</span></h2>
 		</div>
-		<form class="login__form">
+		<form>
+			<div style="position: relative; top:10px;left: 70px">  
 			<input type="text" placeholder="&#128100; username" required autofocus>
+			</div>
+			<div style="position: relative; top:30px;left: 70px"> 
 			<input type="password" placeholder="&#128100; password" required>
+			</div>
+			<div style="position: relative; top:40px;left: 148px"> 
 			<input class="btn_submit" type="submit" value="ENTRAR">
+			</div>
+			<div style="position: relative; top:60px;left: 130px"> 
+			<input class="btn_registrarse" type="button" value="REGISTRARSE">
+			</div>
+			<div style="position: relative; top:20px;left: 50px">
+			<h2 class="texto__registrarse"><span>Si no estás registrado da click en registrarse.</span></h2></h2>
+			</div>
 		</form>
 	</div>
 
