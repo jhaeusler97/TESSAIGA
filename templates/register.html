@@ -89,6 +89,12 @@
 	.btn__submit:hover {
 		background-color: #39A1E5;
 	}
+
+	.texto__registrarse {
+		color: #6E6E6E;
+		padding: .5px;
+		font-size: .8em;
+	}
 	</style>
 </head>
 <body>
@@ -97,18 +103,24 @@
     		<img class="register__img" src="./static/imgs/estampa.png" alt="">
     		<h2 class="register__title"> <span>REGISTRARSE</span></h2>
 		</div>
-		<form>
+		<form action="" method="post">
 			<div style="position: relative; top:40px;left: 70px">  
-			<input type="text" placeholder="&#128100; username" required autofocus>
+			<input type="text" placeholder="&#128100; username" required autofocus, name = "username">
 			</div>
 			<div style="position: relative; top:70px;left: 70px"> 
-			<input type="password" placeholder="&#128100; password" required>
+			<input type="password" placeholder="&#128100; password" required, name = "pssw">
 			</div>
 			<div style="position: relative; top:90px;left: 70px"> 
-			<input type="password" placeholder="&#128100; password" required>
+			<input type="password" placeholder="&#128100; password" required, name = "pssw2">
 			</div>
 			<div style="position: relative; top:110px;left: 120px"> 
-			<input class="btn__submit" type="submit" value="REGISTRARSE">
+			<a href="login"><input class="btn__submit" type="submit" value="REGISTRARSE"></a>
+			</div>
+			<div style="position: relative; top:120px;left: 70px">
+			<h2 class="texto__registrarse"><span>Si ya estás registrado da click en entrar.</span></h2>
+			</div>
+			<div style="position: relative; top:130px;left: 130px"> 
+			<a href="login" ><img src="./static/imgs/entrar.png" width="100px" height="30px"></a>
 			</div>
 		</form>
 	</div>
